@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Entity
 @Getter @Setter @ToString
@@ -25,7 +25,7 @@ public class Member {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    public static Member createMember(MemberDto memberDto, PasswordEncoder passwordEncoder) {
+    public static Member createMember(MemberDto memberDto) {
         Member member = new Member();
 
         member.setEmail(memberDto.getEmail());
