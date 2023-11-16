@@ -3,8 +3,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Header from './components/Header';
 import Card from './components/Card';
-import Student from './components/Student';
-import Teacher from './components/Teacher';
+import Student from './pages/Student';
+import Teacher from './pages/Teacher';
 
 import { Link } from 'react-router-dom';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';

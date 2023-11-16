@@ -92,3 +92,7 @@ task copyReactBuildFiles(type: Copy) {
 	from "$frontendDir/build"
 	into "$projectDir/src/main/resources/static"
 }
+
+tasks.bootJar {
+	dependsOn "copyReactBuildFiles"
+}

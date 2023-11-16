@@ -32,7 +32,7 @@ public class Member {
         member.setPassword(memberDto.getPassword());
         member.setName(memberDto.getName());
 
-        member.setRole(Role.Student);
+        member.setRole(Role.STUDENT);
 
         return member;
     }

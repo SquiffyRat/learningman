@@ -7,7 +7,8 @@ import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
 
-@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
+@Getter @Setter
+@NoArgsConstructor @AllArgsConstructor @Builder
 public class MemberDto {
     @NotBlank(message = "필수 입력 사항입니다.")
     private String name;
