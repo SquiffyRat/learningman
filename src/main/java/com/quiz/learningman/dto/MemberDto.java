@@ -7,14 +7,13 @@ import lombok.*;
 import org.hibernate.validator.constraints.Length;
 
 
-@Getter @Setter @NoArgsConstructor @RequiredArgsConstructor
-//@Builder
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class MemberDto {
     @NotBlank(message = "필수 입력 사항입니다.")
     private String name;
 
     @Email(message = "이메일 형식이 유효하지 않습니다.")
-    @NotEmpty
+    @NotEmpty(message = "필수 입력 사항입니다.")
     private String email;
 
     @NotEmpty(message = "비밀번호 형식이 유효하지 않습니다.")

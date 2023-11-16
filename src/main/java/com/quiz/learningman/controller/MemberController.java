@@ -16,6 +16,8 @@ public class MemberController {
 
     private final MemberService memberService;
 
+
+
     @PostMapping("/members/new")
     public void memberForm(@RequestBody MemberDto memberDto){
         System.out.println(memberDto);
